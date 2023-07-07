@@ -1,16 +1,19 @@
 body {
-    background-repeat: no-repeat;   /* setting the apocalyptic picture as the background and centering it */
+    /* setting the apocalyptic picture as the background and centering it */
+    background-repeat: no-repeat;   
     background-color: #000000;
     background-image: url(apocalypse5.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
-    @media (max-width: 1231px); /* making the website responsive to different device sizes */
+    /* making the website responsive to different device sizes */
+    @media (max-width: 1231px); 
     @media (min-width: 300px;)
  
 }
 .container{
-    display: flex;  /* setting up the parent element */
+    /* setting up the parent element */
+    display: flex;  
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -18,26 +21,29 @@ body {
 }
 
 .login-box{
+    /* setting up the child element */
     width: 450px;  
     height: 350px;
     border: 1px solid rgb(200,0,40,0.6);
     border-radius: 40px;
     box-shadow: 0px 0px 30px rgb(202,0,0);
-    display: flex;   /* setting up the child element */
+    display: flex;   
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: rgb(0,0,0,0.65);
     z-index: 2;
     position: relative;
-    background-image: url(https://i.gifer.com/U0qq.gif);  /* adding the creepy background to the login box */
+    /* adding the creepy background to the login box */
+    background-image: url(https://i.gifer.com/U0qq.gif);  
     background-size: 450px 350px;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 #header{
-    font-family: apocalypse, averia libre;   /* so users know what they are about to sign up for */
+    /* description for what users are about to sign up for */
+    font-family: apocalypse, averia libre;   
     color: rgb(220,0,0);
     font-size: 34px;
     margin-top: 18px;
@@ -46,7 +52,8 @@ body {
 }
 
 .user-info{
-    margin-bottom: 25px;    /* gathers username & password for returning clients */
+    /* gathers username & password for returning clients */
+    margin-bottom: 25px;    
     padding-right: 50px;
     font-family: monospace;
     font-size: 16px;
@@ -58,7 +65,8 @@ body {
 }
 
 .button{
-    margin: 15px;    /* creating button aesthetics */
+    /* creating button aesthetics */
+    margin: 15px;    
     margin-top: 5px;
     padding-bottom: 3px;
     padding-top: 3px;
@@ -73,29 +81,30 @@ body {
     box-shadow: 4px 4px 6px rgb(80,0,0);
 }
 
-.button:hover{   /* hovering button aesthetics so users know the website is responsive */
+.button:hover{   
+    /* hovering button aesthetics so users know the website is responsive */
     background-color: black;
     color: lime;
     transform: scale(1.2);
     box-shadow: 2px 2px 5px limegreen;
 }
 
-#screwed{    /* it's an unhelpful prank in a time of crisis */
+#screwed{    
     font-family: monospace;
     color: white;
     opacity: 0.75;
     margin-top: -5px;
 }
 
-#screwed:hover{    /* hovering aesthetics so users know the website is responsive */
+#screwed:hover{   
     color: lime;
 }
 
 #screwed:active{
-    text-decoration:underline;  /* underlining aesthetics so users know the website is responsive */
+    text-decoration:underline; 
 }
 
-::placeholder {     /* the default gray color wasn't working with the background so i brightened it up */
+::placeholder {    
     color: white;
     opacity: 0.8;
 }
