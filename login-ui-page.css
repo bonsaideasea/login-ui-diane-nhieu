@@ -1,16 +1,16 @@
 body {
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;   /* setting the apocalyptic picture as the background and centering it */
     background-color: #000000;
     background-image: url(apocalypse5.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
-    @media (max-width: 1231px);
+    @media (max-width: 1231px); /* making the website responsive to different device sizes */
     @media (min-width: 300px;)
  
 }
 .container{
-    display: flex;
+    display: flex;  /* setting up the parent element */
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -18,26 +18,26 @@ body {
 }
 
 .login-box{
-    width: 450px;
+    width: 450px;  
     height: 350px;
     border: 1px solid rgb(200,0,40,0.6);
     border-radius: 40px;
     box-shadow: 0px 0px 30px rgb(202,0,0);
-    display: flex;
+    display: flex;   /* setting up the child element */
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: rgb(0,0,0,0.65);
     z-index: 2;
     position: relative;
-    background-image: url(https://i.gifer.com/U0qq.gif);
+    background-image: url(https://i.gifer.com/U0qq.gif);  /* adding the creepy background to the login box */
     background-size: 450px 350px;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 #header{
-    font-family: apocalypse, averia libre;
+    font-family: apocalypse, averia libre;   /* so users know what they are about to sign up for */
     color: rgb(220,0,0);
     font-size: 34px;
     margin-top: 18px;
@@ -46,7 +46,7 @@ body {
 }
 
 .user-info{
-    margin-bottom: 25px;
+    margin-bottom: 25px;    /* gathers username & password for returning clients */
     padding-right: 50px;
     font-family: monospace;
     font-size: 16px;
@@ -58,7 +58,7 @@ body {
 }
 
 .button{
-    margin: 15px;
+    margin: 15px;    /* creating button aesthetics */
     margin-top: 5px;
     padding-bottom: 3px;
     padding-top: 3px;
@@ -73,29 +73,29 @@ body {
     box-shadow: 4px 4px 6px rgb(80,0,0);
 }
 
-.button:hover{
+.button:hover{   /* hovering button aesthetics so users know the website is responsive */
     background-color: black;
     color: lime;
     transform: scale(1.2);
     box-shadow: 2px 2px 5px limegreen;
 }
 
-#screwed{
+#screwed{    /* it's an unhelpful prank in a time of crisis */
     font-family: monospace;
     color: white;
     opacity: 0.75;
     margin-top: -5px;
 }
 
-#screwed:hover{
+#screwed:hover{    /* hovering aesthetics so users know the website is responsive */
     color: lime;
 }
 
 #screwed:active{
-    text-decoration:underline;
+    text-decoration:underline;  /* underlining aesthetics so users know the website is responsive */
 }
 
-::placeholder {
+::placeholder {     /* the default gray color wasn't working with the background so i brightened it up */
     color: white;
     opacity: 0.8;
 }
